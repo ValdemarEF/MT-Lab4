@@ -63,3 +63,29 @@
     </style>
 
 </head>
+
+<body>
+<div id="container">
+    <video id="video" width="480" height="360" preload autoplay loop muted></video>
+    <canvas id="canvas" width="480" height="360"></canvas>
+    <div id="container" class="textWrapper">
+
+    <label for="filter">Filter: </label>
+    <select id="filter">
+        <option value="none">None</option>
+        <option value="blur">Blur</option>
+        <option value="grayscale">Grayscale</option>
+        <option value="invert">Invert</option>
+        <option value="sepia">Sepia</option>
+        <option value="saturate">Saturate</option>
+        <option value="huerotate">Hue-rotate</option>
+        <option value="contrast">Contrast</option>
+    </select>
+
+    <button id="snapshot">Take snapshot</button>
+
+    <canvas id="snap" style="margin-top: 500px !important; margin-left: -40px !important;"></canvas>
+
+    <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/filter"
+       title="WebRTC on GitHub" id="viewSource">WebRTC on GitHub</a>
+</div>
